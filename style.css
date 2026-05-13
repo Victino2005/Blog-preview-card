@@ -108,8 +108,10 @@ color: inherit;
   color: var(--gray-500);
 }
 
-.foundations:focus{
-background-color: gray;
+a:hover, a:focus-visible {
+color: var(--yellow);
+outline: 3px solid var(--gray-950);
+outline-offset: 5ppx;
 }
 
 @media screen and (min-width: 600px) {
