@@ -76,7 +76,7 @@ margin: 10px 0;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .blog-preview-card .intro {
@@ -107,7 +107,12 @@ color: inherit;
   text-decoration: underline;
   color: var(--gray-500);
 }
-@media sreen and (min-width: 600px) {
+
+.foundations:focus{
+background-color: gray;
+}
+
+@media screen and (min-width: 600px) {
   .blog-preview-card {
     max-width: 450px;
     padding: 40px;
