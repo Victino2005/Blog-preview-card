@@ -1,0 +1,120 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--yellow: hsl(47, 88%, 63%);
+--white: hsl(0, 0%, 100%);
+--gray-500: hsl(0, 0%, 42%);
+--gray-950: hsl(0, 0%, 7%);
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/static/Figtree-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+body {
+  font-family: 'Figtree', sans-serif;
+  min-height: 100vh;
+  background-color: var(--yellow);
+  display: flex;
+  color: var(--gray-950);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.blog-preview-card {
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  max-width: 384px;
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px var(--gray-950);
+  height: auto;
+  border: 1px solid var(--gray-950);
+  gap: 12px;
+}
+
+.blog-preview-card .hero-image{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.badge {
+  background-color: var(--yellow);
+  width: fit-content;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 800;
+  padding: 5px;
+  margin-top: 10px;
+  color: var(--gray-950);
+}
+
+.published {
+ color: var(--gray-950);
+}
+
+.foundations {
+font-weight: 800;
+font-size: 1.5rem;
+margin: 10px 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+.blog-preview-card .intro {
+  color: var(--gray-500);
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--gray-950);
+  font-weight: 800;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.foundations:hover {
+  color: var(--yellow);
+  cursor: pointer;
+}
+
+.foundations a {
+text-decoration: none;
+color: inherit;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+  color: var(--gray-500);
+}
+@media sreen and (min-width: 600px) {
+  .blog-preview-card {
+    max-width: 450px;
+    padding: 40px;
+  }
+
+  .foundations {
+    font-size: 2rem;
+
+  }
+}
